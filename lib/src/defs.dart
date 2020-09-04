@@ -24,7 +24,12 @@ final Map<String, Function> _functionMap = {
   'sinh': (num x) => (pow(e, x) - pow(e, -x)) / 2,
   'sqrt': sqrt,
   'tan': tan,
-  'tanh': (num x) => (pow(e, x) - pow(e, -x)) / (pow(e, x) + pow(e, -x))
+  'tanh': (num x) => (pow(e, x) - pow(e, -x)) / (pow(e, x) + pow(e, -x)),
+  'rect': (num x) => x.abs() <= 0.5 ? 1 : 0,
+  'tri': (num x) => (x <= -1 || x >= 1) ? 0 : x < 0 ? 1 + x : 1 - x,
+  'sinc': (num x) => x == 0 ? 1 : sin(x) / x,
+  'sign': (num x) => x > 0 ? 1 : x < 0 ? -1 : 0,
+  'step': (num x) => x >= 0 ? 1 : 0,
 };
 
 /// A mapping of string representations of functions to LaTeX.
@@ -51,7 +56,12 @@ final Map<String, String> _functionLatexRepresentation = {
   'sinh': r'\sinh\left( C \right) ',
   'sqrt': r'\sqrt{ C } ',
   'tan': r'\tan\left( C \right) ',
-  'tanh': r'\tanh\left( C \right) '
+  'tanh': r'\tanh\left( C \right) ',
+  'rect': r'\rect\left( C \right) ',
+  'tri': r'\tri\left( C \right) ',
+  'sinc': r'\sinc\left( C \right) ',
+  'sign':r'\sign\left( C \right) ',
+  'step': r'\step\left( C \right) ',
 };
 
 /// A mapping of string representations to constants.
