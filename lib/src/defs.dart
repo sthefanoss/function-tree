@@ -57,11 +57,11 @@ final Map<String, String> _functionLatexRepresentation = {
   'sqrt': r'\sqrt{ C } ',
   'tan': r'\tan\left( C \right) ',
   'tanh': r'\tanh\left( C \right) ',
-  'rect': r'\rect\left( C \right) ',
-  'tri': r'\tri\left( C \right) ',
-  'sinc': r'\sinc\left( C \right) ',
-  'sign':r'\sign\left( C \right) ',
-  'step': r'\step\left( C \right) ',
+  'rect': r'rect\left( C \right) ',
+  'tri': r'tri\left( C \right) ',
+  'sinc': r'sinc\left( C \right) ',
+  'sign':r'sign\left( C \right) ',
+  'step': r'step\left( C \right) ',
 };
 
 /// A mapping of string representations to constants.
